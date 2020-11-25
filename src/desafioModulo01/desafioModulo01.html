@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JS Rocketseat</title>
+</head>
+<body>
+  <script>
+
+        // 1º exercício
+
+                // var endereco = {
+                // rua: "Rua dos pinheiros",
+                // numero: 1293,
+                // bairro: "Centro",
+                // cidade: "São Paulo",
+                // uf: "SP"
+                // };
+
+
+                // function resultado(){
+                //     console.log('O usuário mora em'  + endereco.cidade + ' / ' + endereco.uf + ', no bairro ' + endereco.bairro + ', na rua "' + endereco.rua + '" com n° ' + endereco.numero + '.');
+                // }
+                
+                // resultado()
+
+
+        // 2º exercício
+   
+                // function pares(x,y){
+                //     while(x<=y){
+                //         if((x%2)==0){
+                //             console.log (x);
+                //         }
+                //     x++;    
+                // }
+                // }
+
+              
+              // pares(10,30);
+
+        
+        // 3º exercício
+
+                // var skills = ["Java", "ReactJS", "React Native"];
+
+                // skills.forEach(function(skills){
+                //             if(skills === "Javascript"){
+                //                 var resultado = true;
+                //             }else{
+                //                 var resultado = false;
+                //             }
+                            
+                //             console.log (resultado);
+                // });
+
+
+        // 4º exercício
+
+                // var anosEstudo = 20;            
+                // var nivel = '';           
+
+                // function experiencia(anosEstudo) {
+                //         if (anosEstudo <= 1){ 
+                //                 nivel = "Iniciante"; 
+                //                 }if(anosEstudo >= 1 && anosEstudo <= 3){
+                //                     nivel = "Intermediário";      
+                //                 }if(anosEstudo >= 3 && anosEstudo <= 6){
+                //                     nivel = "Avançado";
+                //                 }else{
+                //                     nivel = "Jedi Master Mothafucka";
+                //                 }
+                //     }
+                    
+                //     experiencia(anosEstudo);
+
+                //     console.log(nivel);
+
+            // De 0-1 ano: Iniciante
+            // De 1-3 anos: Intermediário
+            // De 3-6 anos: Avançado
+            // De 7 acima: Jedi Master
+        
+
+        // 5º exercício
+
+        var usuarios = [
+            {
+            nome: "Diego",
+            habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+            nome: "Gabriel",
+            habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+        ];
+
+
+        function skills(){
+            console.log ("O " + usuarios[0].nome + " possui as habilidades: " + usuarios[0].habilidades);
+            console.log ("O " + usuarios[1].nome + " possui as habilidades: " + usuarios[1].habilidades);
+
+         };
+
+        skills();
+       
+
+        
+    </script>
+
+</body>
+</html>

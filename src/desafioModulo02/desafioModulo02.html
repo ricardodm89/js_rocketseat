@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JS Rocketseat</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="container">
+  
+        <button onclick="addBox()">Adicionar Box</button>
+
+    
+
+
+  <script>
+
+        function addBox(){
+            var container = document.getElementById("container");
+            var divBox = document.createElement('div');
+            divBox.setAttribute("id","teste");
+            divBox.style.width = "100px";
+            divBox.style.height = "100px";
+            divBox.style.margin = "15px";
+            divBox.style.backgroundColor= '#f00'
+            container.appendChild(divBox);
+
+            document.getElementById("teste").onmouseenter = function(){
+                divBox.style.backgroundColor= newColor;
+                }
+               
+            }
+
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+            }
+            var newColor = getRandomColor(); // #E943F0
+
+
+
+
+</script>
+
+</body>
+</html>
