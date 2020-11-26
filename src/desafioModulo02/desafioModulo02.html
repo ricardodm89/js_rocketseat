@@ -9,9 +9,13 @@
 </head>
 <body id="container">
   
-        <button onclick="addBox()">Adicionar Box</button>
+        <button onclick="addBox()">Exercicio 01 e 02</button>
+        <button onclick="addList()">Exercicio 03</button>
 
-    
+
+    <div id="list">
+
+    </div>
 
 
   <script>
@@ -32,7 +36,6 @@
                
             }
 
-
         function getRandomColor() {
             var letters = "0123456789ABCDEF";
             var color = "#";
@@ -43,7 +46,33 @@
             }
             var newColor = getRandomColor(); // #E943F0
 
+        
+        
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+        function addList(array) {
 
+            var divList = document.getElementById("list");
+            
+            var lista = document.createElement('ul');
+
+            for(var i = 0; i < nomes.length; i++) {
+                // criando a lista
+                var item = document.createElement('li');
+
+                // inserindo valor do array na lista
+                item.appendChild(document.createTextNode(nomes[i]));
+
+                // adicionando a item na lista
+                lista.appendChild(item);
+            }
+            //adicionando lista na div
+            divList.appendChild(lista);
+        }
+
+     
+        
+
+        
 
 
 </script>
