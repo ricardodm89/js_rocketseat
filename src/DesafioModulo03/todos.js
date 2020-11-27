@@ -2,6 +2,7 @@ var listElement = document.querySelector('#app ul');
 var inputElement = document.querySelector('#app input');
 var buttonElement = document.querySelector('#app button');
 
+// JSON.parse para converter em formato array
 var todos = JSON.parse(localStorage.getItem('list_todos')) || [0];
 
 //var todos = [
