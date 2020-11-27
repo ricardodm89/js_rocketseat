@@ -7,9 +7,11 @@ var minhaPromise = function(){
         xhr.onreadystatechange = function(){
             if(xhr.readyState === 4){
                 if(xhr.status === 200){
-                    resolve(JSON.parse(xhr.responseText));
+                    // resolve chama o método .then
+                    resolve(JSON.parse(xhr.responseText)); 
                 }else{
-                    reject('Erro na requisão');
+                    // resolve chama o método .catch    
+                    reject('Erro na requisição');
                 }
             }
         }
@@ -17,5 +19,10 @@ var minhaPromise = function(){
     });
 }
 
-var resultado = minhaPromise();
-console.log(resultado);
+minhaPromise()
+    .then(function(response){
+        console.log(response);
+    })
+    .catch(function(error){
+        console.warn(error);
+    });
