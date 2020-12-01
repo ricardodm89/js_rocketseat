@@ -8,7 +8,8 @@ var minhaPromise = function(){
             if(xhr.readyState === 4){
                 if(xhr.status === 200){
                     // resolve chama o método .then
-                    resolve(JSON.parse(xhr.responseText)); 
+                    resolve(JSON.parse(xhr.responseText));
+                    //console.log(resolve.name);
                 }else{
                     // resolve chama o método .catch    
                     reject('Erro na requisição');
